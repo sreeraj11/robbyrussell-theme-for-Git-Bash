@@ -32,4 +32,4 @@ Without all the time and help from our contributors, it wouldn't be so awesome.
 Thank you so much!
 
 # Developed With ❤️ By Sree Raj
-[Instagram](https://www.instagram.com/_sree_raj__/) tag me in your post showing Theme!
+@[Instagram](https://www.instagram.com/_sree_raj__/) tag me in your post showing Theme!
