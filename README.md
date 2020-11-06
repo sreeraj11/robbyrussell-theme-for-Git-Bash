@@ -2,7 +2,7 @@
 
 <p align="center"><img src="https://github.com/sreeraj11/robbyrussell-theme-for-Git-Bash/blob/main/bash.PNG?raw=true"></p>
 
-
+# Git-bash in vs-code
 <p align="center"><img src="https://github.com/sreeraj11/robbyrussell-theme-for-Git-Bash/blob/main/Capture.PNG?raw=true" alt="robbyrussell"></p>
 
 ## Getting Started
