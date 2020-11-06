@@ -17,6 +17,10 @@ Git Bash is an application for Microsoft Windows environments which provides an 
 
  Change this file for new robbyrussell theme
 ```
+##Font
+```shell
+ https://github.com/microsoft/cascadia-code
+```
 
 ## Contributors
 
