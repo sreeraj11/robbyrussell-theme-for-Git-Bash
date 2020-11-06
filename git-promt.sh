@@ -11,14 +11,14 @@ then
 else
 	Color_Off="\[\033[0m\]" 
 	PS1='\[\033]0;${PWD//[^[:ascii:]]/?}\007\]' # set window title             # new line
-	PS1="$PS1"'\[\033[1;32m\]'       # change to green
+	PS1="$PS1"'\[\033[1;32m\]'    # change to green
 	PS1="$PS1"'➜ '
 	PS1="$PS1"' '  
 	PS1="$PS1"'\[\033[1;36m\]'
-	PS1="$PS1"'\W'
+	PS1="$PS1"'\W'                # current working folder
 	PS1="$PS1"' '                 # space
 	PS1="$PS1"'\[\033[1;94m\]' 
-	PS1="$PS1"'git:'         # current working folder
+	PS1="$PS1"'git:'         
 	if test -z "$WINELOADERNOEXEC"
 	then
 		GIT_EXEC_PATH="$(git --exec-path 2>/dev/null)"
@@ -30,13 +30,13 @@ else
 			"$COMPLETION_PATH/git-completion.bash"
 			. "$COMPLETION_PATH/git-prompt.sh"
 			PS1="$PS1"'$(__git_ps1 "\[\033[1;94m\](\[\033[1;31m\]%s\[\033[1;94m\])")'
-			PS1="$PS1"' '       # bash function
+			PS1="$PS1"' '       
 		fi
 	fi
 	PS1="$PS1"'\[\033[1;33m\]'
-	PS1="$PS1"'✗ '    # change color  
+	PS1="$PS1"'✗ '    p  
 	PS1="$PS1"'\[\033[0;37m\]'   
-	       # space
+	       
 fi
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
