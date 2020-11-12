@@ -15,10 +15,8 @@ else
 	PS1="$PS1"'➜ '
 	PS1="$PS1"' '  
 	PS1="$PS1"'\[\033[1;36m\]'
-	PS1="$PS1"'\W'                # current working folder
-	PS1="$PS1"' '                 # space
-	PS1="$PS1"'\[\033[1;94m\]' 
-	PS1="$PS1"'git:'         
+	PS1="$PS1"'\W'                
+        
 	if test -z "$WINELOADERNOEXEC"
 	then
 		GIT_EXEC_PATH="$(git --exec-path 2>/dev/null)"
@@ -29,12 +27,13 @@ else
 		then
 			"$COMPLETION_PATH/git-completion.bash"
 			. "$COMPLETION_PATH/git-prompt.sh"
-			PS1="$PS1"'$(__git_ps1 "\[\033[1;94m\](\[\033[1;31m\]%s\[\033[1;94m\])")'
-			PS1="$PS1"' '       
+			PS1="$PS1"'$(__git_ps1 " \[\033[1;94m\]git:\[\033[1;94m\](\[\033[1;31m\]%s\[\033[1;94m\])")'
+     
 		fi
 	fi
+	PS1="$PS1"' '
 	PS1="$PS1"'\[\033[1;33m\]'
-	PS1="$PS1"'✗ '    p  
+	PS1="$PS1"'✗ '    
 	PS1="$PS1"'\[\033[0;37m\]'   
 	       
 fi
